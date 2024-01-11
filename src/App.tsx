@@ -1,9 +1,7 @@
-import "./App.css";
-
 function App() {
   return (
     <main>
-      <p> Wake Up To Reality </p>
+      <p className="text-4xl text-center font-bold"> Wake Up To Reality </p>
     </main>
   );
 }
