@@ -7,10 +7,10 @@ import useEngine from "./hooks/useEngine";
 const words = faker.lorem.words(10);
 
 function App() {
-  const { state, words } = useEngine();
+  const { state, words, timeLeft } = useEngine();
   return (
     <>
-      <CountdownTimer timeleft={30} />
+      <CountdownTimer timeleft={timeLeft} />
       <WordsContainer>
         <GenarateRandomWords words={words} />
         <UserTypings className="absolute inset-0" userInput={"test"} />
