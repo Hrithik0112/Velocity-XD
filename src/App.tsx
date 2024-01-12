@@ -1,9 +1,13 @@
+import { faker } from "@faker-js/faker";
+
+const words = faker.lorem.words(10);
+
 function App() {
-  return (
-    <main>
-      <p className="text-4xl text-center font-bold text-primary"> Wake Up To Reality </p>
-    </main>
-  );
+  return <GenarateRandomWords words={words} />;
 }
+
+const GenarateRandomWords = ({ words }: { words: string }) => {
+  return <div className="text-4xl text-center text-slate-500">{words}</div>;
+};
 
 export default App;
