@@ -7,13 +7,13 @@ import useEngine from "./hooks/useEngine";
 const words = faker.lorem.words(10);
 
 function App() {
-  const { state, words, timeLeft } = useEngine();
+  const { state, words, timeLeft, typed } = useEngine();
   return (
     <>
       <CountdownTimer timeleft={timeLeft} />
       <WordsContainer>
         <GenarateRandomWords words={words} />
-        <UserTypings className="absolute inset-0" userInput={"test"} />
+        <UserTypings className="absolute inset-0" userInput={typed} />
       </WordsContainer>
       <RestartButton className={"mx-auto mt-10 text-slate-500"} onRestart={() => null} />
       <Results className="mt-10" accuracyPercentage={100} errors={20} total={200} />
