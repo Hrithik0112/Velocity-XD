@@ -36,7 +36,14 @@ const GenarateRandomWords = ({ words }: { words: string }) => {
 };
 
 const CountdownTimer = ({ timeleft }: { timeleft: number }) => {
-  return <h2 className="text-primary font-medium">Time : {timeleft}</h2>;
+  return (
+    <h2 className="text-primary font-medium flex justify-between">
+      <p>Time : {timeleft}</p>
+      <a href="https://github.com/Hrithik0112/Type-Racer-XD">
+        <img src="./github.svg" height={30} width={30} className="text-white" />
+      </a>
+    </h2>
+  );
 };
 
 export default App;
