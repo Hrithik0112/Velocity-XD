@@ -1,4 +1,4 @@
-# Typer-XD ( React Typing Game)
+# Velocity-XD ( React Typing Game)
 
 ## React + TypeScript + Vite
 
