@@ -7,12 +7,14 @@ const Results = ({
   errors,
   accuracyPercentage,
   total,
+  wpm,
   className = "",
 }: {
   state: State;
   errors: number;
   accuracyPercentage: number;
   total: number;
+  wpm: number;
   className?: string;
 }) => {
   if (state !== "finish") {
@@ -48,6 +50,9 @@ const Results = ({
       </motion.li>
       <motion.li initial={initial} animate={animate} transition={{ duration: 0.3, delay: 1.4 }}>
         Typed: {total}
+      </motion.li>
+      <motion.li initial={initial} animate={animate} transition={{ duration: 0.3, delay: 1.9 }}>
+        WPM : {wpm}
       </motion.li>
     </motion.ul>
   );

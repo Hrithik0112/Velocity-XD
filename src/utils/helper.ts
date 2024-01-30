@@ -22,3 +22,11 @@ export const calculateAccuracyPercentage = (errors: number, total: number) => {
 
   return 0;
 };
+
+export const calculateWordsPerMinute = (
+  totalWords: number,
+  timeElapsedInSeconds: number
+): number => {
+  const wordsPerMinute = Math.round(totalWords / (timeElapsedInSeconds / 60));
+  return wordsPerMinute;
+};

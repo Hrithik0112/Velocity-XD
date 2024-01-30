@@ -2,10 +2,13 @@ import RestartButton from "./components/RestartButton";
 import Results from "./components/Results";
 import UserTypings from "./components/UserTypings";
 import useEngine from "./hooks/useEngine";
-import { calculateAccuracyPercentage } from "./utils/helper";
+import { calculateAccuracyPercentage, calculateWordsPerMinute } from "./utils/helper";
+
+const COUNTDOWN_SECONDS = 30;
 
 function App() {
   const { state, words, timeLeft, typed, errors, restart, totalTyped } = useEngine();
+  const wpm = calculateWordsPerMinute(totalTyped / 5, COUNTDOWN_SECONDS - timeLeft);
   return (
     <>
       <CountdownTimer timeleft={timeLeft} />
@@ -20,6 +23,7 @@ function App() {
         accuracyPercentage={calculateAccuracyPercentage(errors, totalTyped)}
         errors={errors}
         total={totalTyped}
+        wpm={wpm}
       />
     </>
   );
@@ -39,9 +43,9 @@ const CountdownTimer = ({ timeleft }: { timeleft: number }) => {
   return (
     <h2 className="text-primary font-medium flex justify-between">
       <p>Time : {timeleft}</p>
-      <a href="https://github.com/Hrithik0112/Type-Racer-XD">
-        <img src="./github.svg" height={30} width={30} className="text-white" />
-      </a>
+      <p className="font-mono font-bold text-white text-3xl">
+        Velocity-<strong className="font-extrabold text-primary">XD</strong>
+      </p>
     </h2>
   );
 };
