@@ -1,4 +1,5 @@
 # Velocity-XD ( React Typing Game)
+![Screenshot 2024-01-31 001121](https://github.com/Hrithik0112/Velocity-XD/assets/122002784/ded5139d-e81f-4301-aa00-11a3440ac2ba)
 
 ## React + TypeScript + Vite
 
