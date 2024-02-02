@@ -1,33 +1,49 @@
-# Velocity-XD ( React Typing Game)
+# Velocity-XD ( React Typing Game) 🚀
 ![Screenshot 2024-01-31 001121](https://github.com/Hrithik0112/Velocity-XD/assets/122002784/ded5139d-e81f-4301-aa00-11a3440ac2ba)
 
-## React + TypeScript + Vite
+Developed a minimalistic speed typing application using React, Tailwind CSS, TypeScript, and Framer Motion, providing users with an engaging and informative typing experience.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
 
-Currently, two official plugins are available:
+- **Intuitive Design:** Crafted an intuitive and visually pleasing React-based speed typing application, emphasizing simplicity and user-friendly design. 🎨
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive UI:** Leveraged Tailwind CSS to ensure a clean and responsive user interface, enhancing the overall user experience. 📱
 
-## Expanding the ESLint configuration
+- **TypeScript Integration:** Implemented TypeScript to enhance code maintainability and catch potential errors during development, ensuring a robust application. ⌨️
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Smooth Animations:** Utilized the Framer Motion library for smooth animations, adding a dynamic and visually appealing aspect to the typing experience. 🚀
 
-- Configure the top-level `parserOptions` property like this:
+- **Real-time Statistics:** Displayed real-time statistics including accuracy, words typed, errors, and words per minute (WPM), empowering users to track and improve their typing skills. 📊
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
+## Project Overview
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+This project delivers an engaging and informative typing experience, combining an intuitive design, responsive UI, TypeScript integration, smooth animations, and real-time statistics.
+
+## Tech Stack
+
+- **React:** A declarative, efficient, and flexible JavaScript library for building user interfaces.
+- **Tailwind CSS:** A utility-first CSS framework for rapidly building custom user interfaces.
+- **TypeScript:** A superset of JavaScript that adds static types to the language, improving code quality and development experience.
+- **Framer Motion:** A production-ready motion library for React providing a simple interface for creating stunning animations.
+
+## Getting Started
+
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Run the application with `npm start`.
+
+## Usage
+
+- Access the typing application in your web browser.
+- Start typing the displayed text, and the application will provide real-time statistics.
+- Track accuracy, words typed, errors, and words per minute (WPM) to improve your typing skills.
+
+## Contributing
+
+Feel free to contribute to the project by opening issues or submitting pull requests. 🤝
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). 📄
+
+
